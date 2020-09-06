@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Registration Form</title>
+  <style type="text/css">
+    body
+    {
+      background :grey no-repeat;
+      background-size: c
+      color:white;
+    }
+    table {
+      margin-top:30px;
+      border:1px solid #ccc;
+      
+    }
+    label{
+      font-family: monospace;
+      font-size: 19px;
+    }
+    fieldset
+    {
+      width: 94%;
+      margin-top:20px;
+      padding: 10px;
+      padding-left: 13px;
+    }
+    th
+    {
+      color:blue;
+    }
+    input[type="text"],[type="email"]
+    {
+      width: 100%;
+      font-family: monospace;
+      font-size: 24px;
+    }
+    input[type="submit"]
+    {
+      font-family: monospace;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body> 
+     
+  <table align="center">
+    <form>
+      <tr>
+        <th>
+          Registration Form
+        </th>
+      </tr>
+      <tr>
+         <td>
+            <fieldset>
+                <legend>
+                    Personal Information
+                </legend>
+                <label>
+                    Enter Your Name
+                </label>
+                <input type="text" name="name" required>
+                <br>
+                <label>
+                    Enter Your  Father Name
+                </label>
+                <input type="text" name="Father name" required>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+         <td>
+            <fieldset>
+                <legend>
+                    other Information
+                </legend>
+                <label>
+                    Enter Your Email
+                </label>
+                <input type="email" name="mail" required>
+                <br>
+                <label>
+                    Gender
+                </label>
+                <input type="radio" name="gender" value="Male" required>Male
+                <input type="radio" name="gender" value="Female" required>Female
+            </fieldset>
+        </td>
+    </tr>
+     <tr>
+         <td>
+            <fieldset>
+                <legend>
+                    contact Information
+                </legend>
+                <label>
+                    Enter Your Mobile Number
+                </label>
+                <input type="text" name="number"  pattern="[0-9]{11}" required>
+                <br>
+                <label>
+                    Enter your CNIC(xxxxx-xxxxxxx-x)
+                </label>
+                <input type="text" name="cnic" pattern[0-9]{5}[-][0-9]{7}[-][0-9]{1}="Male" required>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+      <td align=center>
+        <input type="submit" value="Register">
+    </form>
+  </table>
+
+
+</body>
+</html>
